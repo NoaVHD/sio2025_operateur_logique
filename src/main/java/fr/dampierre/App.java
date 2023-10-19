@@ -11,18 +11,18 @@ public class App {
         int nombreAnMin = 2;
 
         System.out.println("Saisir le nombre d'argent gagner par an : ");
-        int salaireAn = clavier.nextInt();
+        int salaire = clavier.nextInt();
 
         System.out.println("Saisir le nombre d'année travailler :");
         int nombreAnTravailler = clavier.nextInt();
         clavier.close();
 
-        if (salaireAn >= salaireMin && nombreAnTravailler >= nombreAnMin ){
+        if (salaire > salaireMin && nombreAnTravailler >= nombreAnMin ){
             System.out.println("Votre prêt est accepter");
         }
 
         else{
-            System.out.println("Votre prêt n'est pas accepter");
+            System.out.println("Votre prêt est refusé");
         }
 
     }
